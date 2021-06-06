@@ -9,7 +9,7 @@ Making an FAQ card with responsive design
 - [x] Setup project structure
 - [x] Write the HTML markup with proper sematics
 - [x] Css for mobile device 375 width
-- [] Css for desktop
+- [ ] Css for desktop
 
 ## Screenshot
 
