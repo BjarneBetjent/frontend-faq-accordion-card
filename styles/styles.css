@@ -15,15 +15,18 @@ body {
 }
 
 .faq-container {
+    margin: 0 auto;
     border-radius: 5%;
     background-color: white;
     width: 85vw;
-    min-height: 50vh;
+    max-width: 400px;
+    min-height: 40vh;
     max-height: 70vh;
     padding: 130px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 }
 
 h1 {
@@ -32,11 +35,10 @@ h1 {
 }
 
 
-
 .faq-container > img {
     position: absolute;
-    top: 15px;
-    left: 40px;
+    top: -110px;
+    left: calc(50% - 9rem);
 }
 
 .answer {
@@ -67,10 +69,17 @@ h2 {
     font-size: 0.9rem;
 }
 
-img {
-    margin-bottom: 1.4rem;
-}
 
 hr {
     border-color: hsl(240, 5%, 91%);
+}
+
+@media only screen and (min-width: 1000px) {
+    .faq-container {
+        border-radius: 4%;
+        height: 55vh;
+        width: 65vw;
+        max-width: 1000px;
+        min-height: 40vh;
+    }
 }
