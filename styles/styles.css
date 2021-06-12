@@ -31,7 +31,7 @@ body {
 
 h1 {
     margin: 0 auto 2rem auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
@@ -74,12 +74,53 @@ hr {
     border-color: hsl(240, 5%, 91%);
 }
 
+.desktop-img {
+    display: none;
+}
+
 @media only screen and (min-width: 1000px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
     .faq-container {
         border-radius: 4%;
-        height: 55vh;
+        height: 60vh;
         width: 65vw;
         max-width: 1000px;
         min-height: 40vh;
+        padding: 2rem 2rem 2rem 25%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {  
+        display: block;
+        position: absolute;
+        left: -500px;  
+    }
+
+    .answer {
+        font-weight: 400;
+        color: hsl(240, 6%, 50%);
+    }
+    
+    .question {
+        min-height: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 95% 5%;
+    }
+
+    }
+
+    h1 {
+        margin: 0;
     }
 }
